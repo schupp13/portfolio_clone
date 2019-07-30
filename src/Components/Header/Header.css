@@ -1,0 +1,183 @@
+.datHitterboi{
+  height: 85vh;
+  background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
+  background-size: auto;
+  width: 100%;
+  background-position: center;
+}
+
+nav{
+  height: 50px;
+  background-color: transparent;
+}
+
+nav > *{
+  height: 100%;
+}
+.logo{
+  color: #FEC810;
+  
+  font-size: 2.0em;
+  font-family: 'Kaushan Script', cursive;
+
+}
+
+
+nav ul{
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+   
+}
+
+.desktop{
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 1.1em;
+}
+
+.mobile{
+  display: none;
+}
+
+.headerMid{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+
+.headerMid > *{
+  margin-bottom: 50px;
+  color: white
+}
+
+.headerMid> button{
+  height:50px;
+  width: 150px;
+  background-color: #FEC810;
+}
+
+.headerMid > h3{
+  font-size: 50px;
+}
+
+.headerMid > h1{
+  font-size: 80px;
+}
+
+.burger{
+  height: 100%;
+  
+}
+
+
+.burger > button{
+  border: none;
+  font-size: 20px;
+  background-color: #FEC810;
+}
+.burger > button > i{
+  margin-right: 10px;
+  
+}
+
+
+.menu-close{
+  position: absolute;
+  top: 50px;
+  height: 0vh;
+  width: 100vw;
+  background-color:  rgb(37, 35, 35);
+  animation: menu-close 1s linear;
+  color: white;
+  overflow: hidden;
+}
+
+
+
+.menu-open{
+  position: absolute;
+  top: 50px;
+  height: 70vh;
+  width: 100vw;
+  background-color:  rgb(37, 35, 35);
+  animation:menu-open 1s linear;
+  color: white;
+
+}
+
+
+
+@keyframes menu-open{
+  to{
+    position: fixed;
+    top: 50px;
+    height: 70vh;
+    width: 100vw;
+    background-color:  rgb(37, 35, 35);
+    color: white;
+  }
+  from{
+    position: absolute;
+    top: 50px;
+    height: 0vh;
+    width: 100vw;
+    background-color:  rgb(37, 35, 35);
+    color: white;
+
+}
+
+}
+
+@keyframes menu-close{
+  to{
+    position: absolute;
+    top: 50px;
+    height: 0vh;
+    width: 100vw;
+    background-color:  rgb(37, 35, 35);
+    color: white;
+
+}
+  
+  from{
+    position: fixed;
+    top: 50px;
+    height: 70vh;
+    width: 100vw;
+    background-color:  rgb(37, 35, 35);
+    color: white;
+  }
+
+  
+}
+
+
+
+@media (max-width:990px){
+  nav {background-color: rgb(37, 35, 35);}
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+
+  
+}
+
+
+@media (min-width:990px){
+  .mobile{
+    display: none;
+  }
+ 
+
+  
+}
+
